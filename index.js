@@ -3,7 +3,7 @@ const db = localStorage;
 const data = db.getItem("list");
 // null = 아무것도 없는 값 // object memory
 // undefinded = 아무것도 없음
-const newData = JSON.perse(data);
+const newData = JSON.parse(data);
 
 let list = newData ?? []; // ? ?? 앞에 조건이 만족되지 않을때 안전빵으로 줄 초기값
 
